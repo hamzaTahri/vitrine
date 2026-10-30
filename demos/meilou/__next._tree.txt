@@ -1,0 +1,6 @@
+:HL["/vitrine/demos/meilou/_next/static/chunks/041vf2crwpz6u.css","style"]
+:HL["/vitrine/demos/meilou/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/vitrine/demos/meilou/_next/static/media/6f3ab718e3727c1a-s.p.3huc2loe0ie8a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/vitrine/demos/meilou/_next/static/media/c411eea2a84611fe-s.p.159_th25i75sc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"KnTB5M82dYbmWvX8Trw2u","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

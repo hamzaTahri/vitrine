@@ -1,0 +1,34 @@
+1:"$Sreact.fragment"
+2:"/vitrine/demos/meilou/_next/static/chunks/3aim66gk819b_.js"
+3:I[33499,["$2"],"I18nProvider"]
+4:I[77630,["$2"],"CartProvider"]
+5:I[39756,["$2"],"default"]
+6:I[37457,["$2"],"default"]
+8:"/vitrine/demos/meilou/_next/static/chunks/18wie8xokse9_.js"
+9:I[2971,["$2","$8"],"default"]
+a:I[32177,["$2","$8"],"default"]
+b:I[27048,["$2","$8"],"default"]
+c:I[96471,["$2","$8"],"default"]
+d:I[37163,["$2","$8"],"default"]
+e:I[16774,["$2","$8"],"default"]
+f:I[17683,["$2","$8"],"default"]
+10:I[13642,["$2","$8"],"default"]
+11:I[18016,["$2","$8"],"default"]
+12:I[48621,["$2","$8"],"default"]
+13:I[97367,["$2"],"OutletBoundary"]
+14:"$Sreact.suspense"
+16:"ViewportBoundary"
+17:I[97367,["$2"],"$16"]
+19:"MetadataBoundary"
+1a:I[97367,["$2"],"$19"]
+1c:I[68027,["$2"],"default",1]
+:HL["/vitrine/demos/meilou/_next/static/chunks/041vf2crwpz6u.css","style"]
+:HL["/vitrine/demos/meilou/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/vitrine/demos/meilou/_next/static/media/6f3ab718e3727c1a-s.p.3huc2loe0ie8a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/vitrine/demos/meilou/_next/static/media/c411eea2a84611fe-s.p.159_th25i75sc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+7:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[[["$","$L9",null,{}],["$","main",null,{"className":"flex-1","children":[["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","$Le",null,{}],["$","$Lf",null,{}]]}],["$","$L10",null,{}],["$","$L11",null,{}],["$","$L12",null,{}]],[["$","script","script-0",{"src":"/vitrine/demos/meilou/_next/static/chunks/18wie8xokse9_.js","async":true,"nonce":"$undefined"}]],["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":false,"v":null}}]]
+0:{"P":null,"c":["",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/vitrine/demos/meilou/_next/static/chunks/041vf2crwpz6u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/vitrine/demos/meilou/_next/static/chunks/3aim66gk819b_.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"fr","className":"RklmUG_variable wqIjWa_variable _8Li5zG_variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col","children":["$","$L3",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],"p":false,"v":null},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":"$L18"}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":"$L1b"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$1c",[["$","link","0",{"rel":"stylesheet","href":"/vitrine/demos/meilou/_next/static/chunks/041vf2crwpz6u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"KnTB5M82dYbmWvX8Trw2u"}
+18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1d:I[27201,["$2"],"IconMark"]
+15:null
+1b:[["$","title","0",{"children":"Meilou — ميلو | Amlou & Miels d'exception · Marrakech"}],["$","meta","1",{"name":"description","content":"Amlou artisanal et miels de terroir marocain : amandes de Marrakech, huile d'argan de coopérative féminine, miels de l'Atlas. Livraison partout au Maroc — commande directe sur WhatsApp."}],["$","link","2",{"rel":"icon","href":"/vitrine/demos/meilou/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1d","3",{}]]

@@ -1,0 +1,4 @@
+:HL["/vitrine/demos/auto-ecole-najah/_next/static/chunks/35h-_1xl3onyx.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"FF2FO8rNQBZqbIC5oDuMW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
