@@ -10,7 +10,7 @@
   6 démos en ligne ↓
   ```
 - Link: `https://hamzatahri.github.io/vitrine/` (live).
-- Contact button: Email or none. No WhatsApp number for now: the site sends people to Instagram DMs (`https://ig.me/m/vitrine.ma`).
+- Contact button: Email or none. No WhatsApp number for now: the site sends people to Instagram DMs (`https://ig.me/m/vitrine.developer.me`).
 - Highlights (cover files in `out/profile/`): Démos `hl-demos`, Salon `hl-salon`, Resto `hl-resto`, Riad `hl-riad`, Offre `hl-offre`, Contact `hl-contact`. Fill each with the matching reel or post.
 
 ## Creating the account (manual, in the app or on instagram.com)
@@ -97,7 +97,7 @@ Une boutique d'amlou et de miels ouverte 24h/24 : 10 produits, panier, livraison
 
 ## Before you publish
 - Demos are live at `https://hamzatahri.github.io/vitrine/demos/<app>/` (checked).
-- The site's contact button uses `https://ig.me/m/vitrine.ma`: update it if you pick a different handle (edit `index.html`, then `./build-site.sh` and push `gh-pages`).
+- The site's contact button uses `https://ig.me/m/vitrine.developer.me`: update it if you pick a different handle (edit `index.html`, then `./build-site.sh` and push `gh-pages`).
 - The reels have no sound: add a trending or royalty-free track in the Instagram editor, and use Instagram auto-captions in French.
 - The demos show invented businesses and reviews. Say "démo" in captions (already done), never present them as real clients.
 
