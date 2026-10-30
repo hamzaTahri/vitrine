@@ -3,12 +3,11 @@ const D='/Users/hamzatahri/IdeaProjects/personal/developerMe/instagram/';
 const FF='/Users/hamzatahri/Library/Python/3.9/lib/python/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1';
 (async()=>{
 const slug=process.argv[2],fps=30,dur=12;
-const b=await p.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:'new',args:['--allow-file-access-from-files','--disable-web-security']});
+const b=await p.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:'new',args:['--allow-file-access-from-files','--disable-web-security','--user-data-dir=/tmp/reel-profile']});
 const pg=await b.newPage();
 await pg.setViewport({width:1080,height:1920});
-await pg.goto('http://localhost:8765/ig/reel.html#'+slug,{waitUntil:'networkidle0'});
-await pg.reload({waitUntil:'networkidle0'});
-await pg.waitForFunction('document.body.dataset.ready',{timeout:20000});
+await pg.goto('http://localhost:8765/reel.html#'+slug,{waitUntil:'networkidle0'});
+await pg.waitForFunction('document.body.dataset.ready',{timeout:30000});
 await pg.evaluate('document.fonts.ready');
 const fd='/tmp/frames-'+slug;fs.rmSync(fd,{recursive:true,force:true});fs.mkdirSync(fd);
 const n=fps*dur;

@@ -9,7 +9,7 @@
   Réservation · Commande WhatsApp · FR/AR/Darija
   6 démos en ligne ↓
   ```
-- Link: the published portfolio URL (see README at the project root once deployed). Second link: your WhatsApp `https://wa.me/<YOUR_NUMBER>`
+- Link: `https://hamzatahri.github.io/vitrine/` (live). Second link: your WhatsApp `https://wa.me/<YOUR_NUMBER>`
 - Contact button: WhatsApp
 - Highlights (cover files in `out/profile/`): Démos `hl-demos`, Salon `hl-salon`, Resto `hl-resto`, Riad `hl-riad`, Offre `hl-offre`, Contact `hl-contact`. Fill each with the matching reel or post.
 
@@ -86,10 +86,10 @@ Une boutique d'amlou et de miels ouverte 24h/24 : 10 produits, panier, livraison
 - Business: `#entrepreneurmaroc #pme #digitalmaroc`
 
 ## Before you publish
-- Demos are hosted separately: see the deployment status in the project README. Do not put the link in the bio until it works.
+- Demos are live at `https://hamzatahri.github.io/vitrine/demos/<app>/` (checked).
 - Replace `<YOUR_NUMBER>` with your WhatsApp number.
 - The reels have no sound: add a trending or royalty-free track in the Instagram editor, and use Instagram auto-captions in French.
 - The demos show invented businesses and reviews. Say "démo" in captions (already done), never present them as real clients.
 
 ## Regenerating assets
-Source files: `posts.html` (posts, avatar, highlights) and `reel.html` (reels). Edit the text in those files and re-render. Render scripts are in `tools/` (they need `puppeteer-core`, Chrome, and the built site served at `http://localhost:8765/developerMe/`; paths inside are specific to this machine).
+Source files: `posts.html` (posts, avatar, highlights) and `reel.html` (reels). Edit the text in those files and re-render. Render scripts are in `tools/` (they need `puppeteer-core` and Chrome). `tools/shots.js` and `reel.html` load the demos from the live site; `tools/reel.js` serves `reel.html` from `http://localhost:8765/` (run `python3 -m http.server 8765` in `instagram/`). Paths inside are specific to this machine.
