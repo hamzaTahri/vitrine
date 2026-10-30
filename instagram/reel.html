@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1080px;height:1920px;overflow:hidden;background:#07070b;font-family:Inter,sans-serif;color:#f5f2ea;position:relative}
+.bg{position:absolute;inset:0;background:radial-gradient(circle at 0 0,rgba(192,121,43,.45),transparent 50%),radial-gradient(circle at 100% 100%,rgba(59,76,202,.3),transparent 50%)}
+.serif{font-family:Fraunces,serif;font-weight:500;letter-spacing:-.025em}
+.grad{background:linear-gradient(120deg,#f6d58e,#e7b75f 50%,#d98a3d);-webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+.brand{position:absolute;top:110px;left:80px;display:flex;align-items:center;gap:14px;font-weight:700;font-size:32px}
+.brand i{width:50px;height:50px;border-radius:15px;background:linear-gradient(135deg,#e7b75f,#c0792b);display:grid;place-items:center;color:#1a1204;font-style:normal;font-weight:800;font-size:28px}
+#hook{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center}
+#hook .e{color:#e7b75f;font-size:30px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:30px}
+#hook h1{font-size:128px;line-height:1.02}
+#cap{position:absolute;left:0;right:0;top:215px;text-align:center}
+#cap span{display:inline-block;padding:26px 48px;border-radius:999px;background:rgba(14,14,21,.85);border:2px solid rgba(231,183,95,.5);font-size:44px;font-weight:700;color:#f6d58e;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+#ph{position:absolute;left:174px;top:340px;width:732px;height:1540px;border-radius:96px;padding:16px;background:#1b1b24;border:3px solid #3a3a48;box-shadow:0 60px 120px -20px #000;overflow:hidden;transform-origin:50% 50%}
+#vp{width:700px;height:1508px;border-radius:80px;overflow:hidden;position:relative;background:#fff}
+#vp iframe{position:absolute;left:0;top:0;width:390px;height:840px;border:0;transform:scale(1.7949);transform-origin:0 0}
+#out{position:absolute;left:80px;right:80px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;opacity:0}
+#out h2{font-size:118px;line-height:1.04;margin-bottom:56px}
+.cta{display:inline-flex;padding:36px 60px;border-radius:999px;background:linear-gradient(135deg,#f6d58e,#e7b75f);color:#1a1204;font-weight:700;font-size:44px;box-shadow:0 20px 60px rgba(231,183,95,.35)}
+#bar{position:absolute;left:80px;right:80px;bottom:48px;height:6px;border-radius:3px;background:rgba(255,255,255,.12)}
+#bar b{display:block;height:100%;width:0;border-radius:3px;background:#e7b75f}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="brand"><i>V</i>Vitrine</div>
+<div id="cap"><span></span></div>
+<div id="ph"><div id="vp"><iframe id="fr"></iframe></div></div>
+<div id="hook"><div class="e">Démo réelle</div><h1 class="serif"></h1></div>
+<div id="out"><h2 class="serif">Et pour <span class="grad">votre commerce</span> ?</h2><span class="cta">Écrivez « SITE » en message privé</span></div>
+<div id="bar"><b></b></div>
+<script>
+const CFG={
+ 'salon-jamila':{hook:'Un salon qui prend ses rendez-vous <span class="grad">tout seul</span>',stops:[['services','Les soins et les prix en MAD'],['gallery','Une galerie qui donne envie'],['booking','Le client réserve son créneau']]},
+ 'snack-lmoumen':{hook:'Un menu digital qui envoie la commande sur <span class="grad">WhatsApp</span>',stops:[['menu','Menu clair, photos et prix'],['menu','Panier et commande WhatsApp',1900],['delivery','Zone de livraison']]},
+ 'riad-nour':{hook:'Un riad qui <span class="grad">remplit son calendrier</span>',stops:[['rooms','Chambres et suites'],['experiences','Expériences à vivre'],['booking','Dates et nuitées calculées']]},
+ 'hammam-salam':{hook:'Un hammam avec <span class="grad">horaires séparés</span> femmes et hommes',stops:[['services','11 soins et massages'],['gift','Cartes cadeaux'],['booking','Réservation en ligne']]},
+ 'auto-ecole-najah':{hook:'Une auto-école avec le <span class="grad">quiz du code</span> intégré',stops:[['formules','Des formules claires'],['booking','Réservation de séances'],['code','Test du code en ligne']]},
+ 'meilou':{hook:'Une boutique d\'amlou <span class="grad">ouverte 24h/24</span>',stops:[['histoire','L\'histoire de la marque'],['boutique','Panier et livraison'],['contact','Commande par WhatsApp']]}
+};
+const slug=location.hash.slice(1);
+const C=CFG[slug];
+const D=12;
+const fr=document.getElementById('fr');
+document.querySelector('#hook h1').innerHTML=C.hook;
+const ease=x=>x<0?0:x>1?1:x*x*(3-2*x);
+const cl=(x,a,b)=>Math.min(1,Math.max(0,(x-a)/(b-a)));
+let ys=[0],ready=false;
+fr.onload=()=>{
+ const d=fr.contentDocument;
+ setTimeout(()=>{
+  ys=[0,...C.stops.map(s=>{const e=d.getElementById(s[0]);return Math.max(0,e.getBoundingClientRect().top+fr.contentWindow.scrollY-70+(s[2]||0))})];
+  document.body.dataset.ready=1;
+ },1500);
+};
+fr.src='http://localhost:8765/developerMe/demos/'+slug+'/';
+window.setT=t=>{
+ const hook=document.getElementById('hook'),ph=document.getElementById('ph'),cap=document.querySelector('#cap span'),out=document.getElementById('out');
+ const hIn=ease(cl(t,0,.5)),hOut=ease(cl(t,1.8,2.4));
+ hook.style.opacity=hIn*(1-hOut);hook.style.transform=`translateY(${(1-hIn)*40-hOut*60}px)`;
+ const pIn=ease(cl(t,1.8,2.7));
+ const pOut=ease(cl(t,10.2,11));
+ ph.style.transform=`translateY(${(1-pIn)*1500+pOut*1500}px)`;
+ const t0=2.7,seg=2.35;
+ let y=0,c='';
+ for(let i=0;i<C.stops.length;i++){
+  const s=t0+i*seg,k=ease(cl(t,s,s+.9));
+  if(t>=s)y=ys[i]+(ys[i+1]-ys[i])*k;
+  if(t>=s+.15&&t<s+seg+.15)c=C.stops[i][1];
+ }
+ if(t<t0)y=0;
+ fr.contentWindow.scrollTo({top:y,behavior:'instant'});
+ cap.textContent=c;cap.parentElement.style.opacity=c&&t<10.2?1:0;
+ out.style.opacity=ease(cl(t,10.5,11.2));out.style.transform=`translateY(${(1-ease(cl(t,10.5,11.2)))*40}px)`;
+ document.querySelector('#bar b').style.width=(t/D*100)+'%';
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+.next/
+out/
+.abacusai/temp/
+apps/auto-ecole-najah/
+apps/hammam-salam/
+apps/meilou/
+apps/riad-nour/
+apps/salon-jamila/
+apps/snack-lmoumen/
