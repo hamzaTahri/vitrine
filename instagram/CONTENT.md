@@ -6,12 +6,22 @@
 - Bio:
   ```
   Sites & apps pour commerces marocains
-  Réservation · Commande WhatsApp · FR/AR/Darija
+  Réservation · Commande · FR/AR/Darija
   6 démos en ligne ↓
   ```
 - Link: `https://hamzatahri.github.io/vitrine/` (live).
 - Contact button: Email or none. No WhatsApp number for now: the site sends people to Instagram DMs (`https://ig.me/m/vitrine.ma`).
 - Highlights (cover files in `out/profile/`): Démos `hl-demos`, Salon `hl-salon`, Resto `hl-resto`, Riad `hl-riad`, Offre `hl-offre`, Contact `hl-contact`. Fill each with the matching reel or post.
+
+## Creating the account (manual, in the app or on instagram.com)
+1. Log out of your personal account, or use the app's "Add account" (Settings → Add account). Keep the personal one separate.
+2. Sign up with a dedicated email (e.g. a Gmail just for Vitrine), not your Renault or personal address.
+3. Pick the handle. Check it is free first: open `instagram.com/<handle>` in a private window; a 404 means free. Try `vitrine.ma`, then `vitrine.maroc`, `vitrine.web`, `vitrine.ma.sites`.
+4. Name field: `Vitrine | Sites web Maroc` (searchable text, different from the handle).
+5. Switch to a **Professional account → Business**, category `Website Designer` (or `Software Company`). This unlocks Insights and the contact button.
+6. Upload `out/profile/avatar.png` as the photo, paste the bio above, set the link to `https://hamzatahri.github.io/vitrine/`.
+7. Contact options: Email only (no phone number needed). Leave WhatsApp out.
+8. Create the 6 highlights with the cover files, then publish in the order of the table below.
 
 ## Publishing order (grid reads best from the bottom)
 | Day | Format | File | Caption |
@@ -87,7 +97,7 @@ Une boutique d'amlou et de miels ouverte 24h/24 : 10 produits, panier, livraison
 
 ## Before you publish
 - Demos are live at `https://hamzatahri.github.io/vitrine/demos/<app>/` (checked).
-- The site's contact button uses `https://ig.me/m/vitrine.ma`: update it if you pick a different handle.
+- The site's contact button uses `https://ig.me/m/vitrine.ma`: update it if you pick a different handle (edit `index.html`, then `./build-site.sh` and push `gh-pages`).
 - The reels have no sound: add a trending or royalty-free track in the Instagram editor, and use Instagram auto-captions in French.
 - The demos show invented businesses and reviews. Say "démo" in captions (already done), never present them as real clients.
 
