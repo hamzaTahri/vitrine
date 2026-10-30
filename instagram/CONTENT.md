@@ -9,8 +9,8 @@
   Réservation · Commande WhatsApp · FR/AR/Darija
   6 démos en ligne ↓
   ```
-- Link: `https://hamzatahri.github.io/vitrine/` (live). Second link: your WhatsApp `https://wa.me/<YOUR_NUMBER>`
-- Contact button: WhatsApp
+- Link: `https://hamzatahri.github.io/vitrine/` (live).
+- Contact button: Email or none. No WhatsApp number for now: the site sends people to Instagram DMs (`https://ig.me/m/vitrine.ma`).
 - Highlights (cover files in `out/profile/`): Démos `hl-demos`, Salon `hl-salon`, Resto `hl-resto`, Riad `hl-riad`, Offre `hl-offre`, Contact `hl-contact`. Fill each with the matching reel or post.
 
 ## Publishing order (grid reads best from the bottom)
@@ -87,7 +87,7 @@ Une boutique d'amlou et de miels ouverte 24h/24 : 10 produits, panier, livraison
 
 ## Before you publish
 - Demos are live at `https://hamzatahri.github.io/vitrine/demos/<app>/` (checked).
-- Replace `<YOUR_NUMBER>` with your WhatsApp number.
+- The site's contact button uses `https://ig.me/m/vitrine.ma`: update it if you pick a different handle.
 - The reels have no sound: add a trending or royalty-free track in the Instagram editor, and use Instagram auto-captions in French.
 - The demos show invented businesses and reviews. Say "démo" in captions (already done), never present them as real clients.
 
